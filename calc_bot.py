@@ -95,7 +95,7 @@ def get_text_messages(message):
 markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
 btn1 = types.KeyboardButton("👋 Поздороваться")
 markup.add(btn1)
-bot.send_message(user_id, "👋 Привет! Я твой бот-помощник!", reply_markup=markup)
+bot.send_message(user_id, "👋 Привет! Я твой бот-калькулятор арифметических выражений!", reply_markup=markup)
 
 logging.info('Start bot')
-bot.polling(none_stop=True, interval=0) #обязательная для работы бота часть
+bot.polling(none_stop=True, interval=0) # Запуск прослушивания очереди
